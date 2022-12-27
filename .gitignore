@@ -241,6 +241,7 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 *.pdf
+.work
 build/.cmake
 build/CMakeFiles
 build/CMakeCache.txt

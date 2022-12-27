@@ -254,10 +254,10 @@ export build_mode
 
 
 # 检验编译平台 有效性
-[ -z "${plaform_pre}" ] && plaform_pre=${plaform_default}
-# plaform_pre=${plaform_pre//","/" "}  支持多平台时再启用
-echo -e "platform:  ${plaform_pre} \n"
-for platform_index in $plaform_pre
+[ -z "${platform_pre}" ] && platform_pre=${platform_defalut}
+# platform_pre=${platform_pre//","/" "}  支持多平台时再启用
+echo -e "platform:  ${platform_pre} \n"
+for platform_index in ${platform_pre}
 do
     check_platform ${platform_index}
 done
