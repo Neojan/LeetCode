@@ -245,3 +245,4 @@ ModelManifest.xml
 build/.cmake
 build/CMakeFiles
 build/CMakeCache.txt
+.obsidian
