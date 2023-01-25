@@ -1,9 +1,16 @@
 #include <iostream>
 #include <string.h>
 #include <vector>
+#include <deque>
+#include <list>
 #include <unistd.h>
-#include <unordered_set>
+#include <map>
+#include <utility> // pair
+#include <set>
 #include <unordered_map>
+#include <unordered_set>
+#include <stack>
+#include <queue>
 using namespace std;
 
 
