@@ -45,12 +45,12 @@ public:
         ListNode *dummy = new ListNode(-1);
         dummy->next     = head;
         int i           = 0;
-        ListNode *trav         = dummy;// 记录反转前一个节点
+        ListNode *pre         = dummy;// 记录反转前一个节点
         for (; i < left - 1; i++)
         {
-            trav = trav->next;
+            pre = pre->next;
         }
-        ListNode *cur = trav->next;
+        ListNode *cur = pre->next;
         ListNode *next;
         for (i = 0; i < right - left; i++)
         {
@@ -60,8 +60,8 @@ public:
             //执行操作 ③：把 pre 的下一个节点指向 next。
             next = cur->next;
             cur->next = next->next;
-            next->next       = trav->next;
-            trav->next       = next;
+            next->next       = pre->next;
+            pre->next        = next;
         }
         return dummy->next;
     }
