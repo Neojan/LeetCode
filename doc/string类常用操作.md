@@ -3,6 +3,7 @@
 string str;  //定义了一个空字符串str
     str = "Hello world";   // 给str赋值为"Hello world"
     char cstr[] = "abcde";  //定义了一个C字符串
+    string s0 = cstr;
     string s1(str);       //调用复制构造函数生成s1，s1为str的复制品
     string s2(str,6);     //将str内，开始于位置6的部分当作s2的初值
     string s3(str,6,3);  //将str内，开始于6且长度顶多为3的部分作为s3的初值
@@ -36,12 +37,14 @@ string str;  //定义了一个空字符串str
 
 ## 其他
 ```cpp
-int size()const;        //返回当前字符串的大小
-int length()const;       //返回当前字符串的长度
-bool empty()const;        //当前字符串是否为空
 str.size();
 str.empty();
 str.length();
+const char* pszOutput = strOutput.c_str();
+//int转string
+int nNum2 = 456;
+string strTest4; 
+strTest4 = to_string(nNum2);
 ```
 
 ## find
@@ -54,4 +57,14 @@ str.length();
     loc=s.find_first_not_of("study");
     loc=s.find_last_of("day");
     loc=s.find("day");//缺陷状态下从第一个往后找
+    // 如果检索到子串在字符串中，则打印子串的位置
+    if (loc != string::npos)
+    {
+    }
+    size_t pos = str.find("live"); // position of "live" in str
+	string str3 = str.substr(pos); // get from "live" to the end
 ```
+
+## 大小写转化
+tolower
+toupper
