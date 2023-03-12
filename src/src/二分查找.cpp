@@ -46,7 +46,6 @@ int binary_search_left_bound(vector<int> s, int d)
             right = mid - 1;
         }
     }
-    cout << left << "," << s.size()<< endl;
     if (left == s.size())
         return -1;
     
@@ -73,7 +72,6 @@ int binary_search_right_bound(vector<int> s, int d)
             left = mid + 1;
         }
     }
-    cout << left << "," << s.size() << endl;
     if (left -1 < 0)
         return -1;
 

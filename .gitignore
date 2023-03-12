@@ -246,3 +246,4 @@ build/.cmake
 build/CMakeFiles
 build/CMakeCache.txt
 .obsidian
+main.cpp
