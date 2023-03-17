@@ -45,6 +45,7 @@ const char* pszOutput = strOutput.c_str();
 int nNum2 = 456;
 string strTest4; 
 strTest4 = to_string(nNum2);
+reverse(s.begin(), s.end());//反转原先字符串
 ```
 
 ## find
@@ -68,4 +69,10 @@ strTest4 = to_string(nNum2);
 ## 大小写转化
 tolower
 toupper
+stoi ：str转整型
+to_string：数字转字符串
+isalpha(int);
+isnumber(int);
 
+bitset - 二进制
+bitset<32> b(str or int);
